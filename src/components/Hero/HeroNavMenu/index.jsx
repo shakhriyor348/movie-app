@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
+import { MovieContext } from '../../../Context/MovieContext'
 import HeroNavLink from '../HeroNavLink'
 
 const NavMenu = styled.div`
@@ -28,9 +29,11 @@ const NavMenu = styled.div`
 `
 
 const HeroNavMenu = () => {
+    const { hiddenMenu } = useContext(MovieContext)
+
     return (
-        <NavMenu>
-            <HeroNavLink  text={'Popular'}/>
+        <NavMenu className={hiddenMenu ? 'hidden' : ''}>
+            <HeroNavLink text={'Popular'} />
             <HeroNavLink text={'All Movies'} />
         </NavMenu>
 

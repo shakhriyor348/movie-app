@@ -49,7 +49,7 @@ const LoaderWrapper = styled.div`
 
 const Loader = () => {
     return (
-        <LoaderWrapper>Loader</LoaderWrapper>
+        <LoaderWrapper></LoaderWrapper>
     )
 }
 

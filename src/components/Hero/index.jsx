@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Output from '../Output/Output'
 import HeroNav from './HeroNav'
 
 
@@ -14,6 +15,7 @@ const Hero = () => {
     return (
         <Section>
             <HeroNav />
+            <Output />
         </Section>
     )
 }
